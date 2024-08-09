@@ -27,7 +27,7 @@ mkdir -p $baseDir
 
 if [[ ! -e "$baseDir/latestReleaseInfo.json" ]]; then
 
-  curl -SsL https://api.github.com/repos/supermerill/SuperSlicer/releases/latest > $baseDir/latestReleaseInfo.json
+  curl -SsL https://api.github.com/repos/supermerill/SuperSlicer/releases/142041544 > $baseDir/latestReleaseInfo.json
 
 fi
 
