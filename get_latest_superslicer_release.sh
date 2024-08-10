@@ -27,7 +27,7 @@ mkdir -p $baseDir
 
 if [[ ! -e "$baseDir/latestReleaseInfo.json" ]]; then
 
-  curl -SsL https://api.github.com/repos/supermerill/SuperSlicer/releases/142041544 > $baseDir/latestReleaseInfo.json
+  curl -SsL https://api.github.com/repos/supermerill/SuperSlicer/releases/2.5.60.0 > $baseDir/latestReleaseInfo.json
 
 fi
 
@@ -38,7 +38,7 @@ if [[ $# -gt 1 ]]; then
   VER=$2
 
   if [[ ! -e "$baseDir/releases.json" ]]; then
-    curl -SsL https://api.github.com/repos/supermerill/SuperSlicer/releases/142041544 > $baseDir/releases.json
+    curl -SsL https://api.github.com/repos/supermerill/SuperSlicer/releases/2.5.60.0 > $baseDir/releases.json
   fi
 
   allReleases=$(cat $baseDir/releases.json)
