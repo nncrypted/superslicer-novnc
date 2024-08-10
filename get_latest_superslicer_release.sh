@@ -38,7 +38,7 @@ if [[ $# -gt 1 ]]; then
   VER=$2
 
   if [[ ! -e "$baseDir/releases.json" ]]; then
-    curl -SsL https://api.github.com/repos/supermerill/SuperSlicer/releases > $baseDir/releases.json
+    curl -SsL https://api.github.com/repos/supermerill/SuperSlicer/releases/142041544 > $baseDir/releases.json
   fi
 
   allReleases=$(cat $baseDir/releases.json)
